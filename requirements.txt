@@ -1,0 +1,7 @@
+pytorch
+cytoolz
+gensim
+pandas
+scikit-learn
+tensorboardX
+
