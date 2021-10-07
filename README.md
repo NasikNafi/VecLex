@@ -1,19 +1,20 @@
 
 # VecLex Reward-based Summarization of Disaster-Related Document
 
-This repository contains the code for the following ISCRAM 2020 paper:
+This repository contains the code for the following ISCRAM 2020 paper:\
 *[Abstractive Text Summarization of Disaster-Related Documents](http://idl.iscram.org/files/nasikmuhammadnafi/2020/2279_NasikMuhammadNafi_etal2020.pdf)*.
 
 If you use this code, please cite our paper:
 ```
-Nasik Muhammad Nafi, Avishek Bose, Sarthak Khanal, Doina Caragea, & William H. Hsu. (2020). 
-Abstractive Text Summarization of Disaster-Related Documents.
-In Amanda Hughes, Fiona McNeill, & Christopher W. Zobel (Eds.), ISCRAM 2020 
-Conference Proceedings – 17th International Conference on Information Systems for Crisis Response and Management (pp. 881–892). 
-Blacksburg, VA (USA): Virginia Tech.
+@inproceedings{nafi2020abstractive,
+  title={Abstractive Text Summarization of Disaster-Related Document},
+  author={Nafi, Nasik Muhammad and Bose, Avishek and Khanal, Sarthak and Caragea, Doina and Hsu, William H},
+  booktitle={ISCRAM 2020 Conference Proceedings--17th International Conference on Information Systems for Crisis Response and Management},
+  year={2020}
+}
 ```
 
-Our code is largely based on *[this](https://github.com/ChenRocks/fast_abs_rl)* implementation and the corresponding paper is available *[here](https://arxiv.org/abs/1805.11080)*
+Our code is largely based on *[this](https://github.com/ChenRocks/fast_abs_rl)* implementation and the corresponding paper is available *[here](https://arxiv.org/abs/1805.11080)*.
   
   
   
@@ -57,13 +58,13 @@ In our experiment, we have used *beam_szie=1*. You can explicitly keep your prep
 
 First, you need to download the Google’s pre-trained word2vec model from *[here](https://drive.google.com/file/d/12DzHGI-Ollv5gDy2O48FVx4yZf1hNIW8/view?usp=sharing)* and the CrisisLex lexicon file from *[here](http://crisislex.org/crisis-lexicon.html#collapseOne)*. Then, configure the paths in *path_config.py* file.
 
-**Word2Vec Model Path:** Update the path to the downloaded pre-trained word2vec file.
+**Word2Vec Model Path:** Update the path to the downloaded pre-trained word2vec file.\
 `word2vec_filepath = [path/to/the/downloaded/word2vec/file]`
 
-**Lexicon File Path:** Update the path to the downloaded lexicon file path. 
+**Lexicon File Path:** Update the path to the downloaded lexicon file path.\
 `lexicon_filepath = [path/to/the/downloaded/crisislex/file]`
 
-&nbsp;
+\
 Next, create the reference (ground truth) files for evaluation:
 ```
 python make_eval_references.py
